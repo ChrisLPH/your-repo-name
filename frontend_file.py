@@ -17,16 +17,16 @@ st.image("./assets/img/iris-machinelearning.png")
 
 col1, col2 = st.columns(2)
 with col1:
-    sepal_length = st.slider("Sepal Length (cm)", min_value=0.0, max_value=10.0, value=5.0)
+    sepal_length = st.slider("Sepal Length (cm)", min_value=1, max_value=4, value=1, step=1)
 
 with col2:
-    sepal_width = st.slider("Sepal Width (cm)", min_value=0.0, max_value=10.0, value=3.5)
+    sepal_width = st.slider("Sepal Width (cm)", min_value=1, max_value=4, value=1, step=1)
 
 col3, col4 = st.columns(2)
 with col3:
-    petal_length = st.slider("Petal Length (cm)", min_value=0.0, max_value=10.0, value=1.5)
+    petal_length = st.slider("Petal Length (cm)", min_value=1, max_value=4, value=1, step=1)
 with col4:
-    petal_width = st.slider("Petal Width (cm)", min_value=0.0, max_value=10.0, value=0.2)
+    petal_width = st.slider("Petal Width (cm)", min_value=1, max_value=4, value=1, step=1)
 st.divider()
 dict_pred = {
     "sepal_length": sepal_length,
